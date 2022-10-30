@@ -1,0 +1,14 @@
+{% include 'recipes/partials/_head.html' %}
+<body>
+    {% include 'recipes/partials/_header.html' %}
+    {% include 'recipes/partials/_search.html' %}
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include 'recipes/partials/_card.html' %}
+        </div>
+    </main>
+    {% include 'recipes/partials/_footer.html' %}
+    <p><i class="fa-solid fa-check"></i>Your name is {{ name }}.</p>
+</body>
+</html>
