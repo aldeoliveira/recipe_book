@@ -147,7 +147,7 @@ h1,h2,h3,h4,h5,h6 {
 .recipe {
     background: var(--color-white);
     box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
-    transform: scale(1);
+    transform: scale(1);  /* TODO: verificar necessidade desta linha*/ 
     transition: all var(--transition-time) ease-in-out;
     border-radius: .4rem;
     overflow: hidden;
@@ -226,6 +226,17 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipe-footer a:hover {
     filter: brightness(2);
+}
+
+.main-content-detail  .recipe-list-item {
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+/* TODO: Ao invés de desfazer esses itens na página detail, não é melhor fazê-los apenas em list? */
+.main-content-detail  .recipe-list-item:hover {
+    transform: scale(1);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
 }
 
 .main-footer {
