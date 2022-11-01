@@ -1,0 +1,19 @@
+{% include 'recipes/partials/_head.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'recipes/partials/_head.html' %}
+    <title>{% block title %}{% endblock title %}Recipes</title>
+</head>
+
+<body>
+    {% include 'recipes/partials/_header.html' %}
+    {% include 'recipes/partials/_search.html' %}
+
+    <main class="main-content-container">
+        {% block content %}{% endblock content %}
+    </main>
+    {% include 'recipes/partials/_footer.html' %}
+    <p><i class="fa-solid fa-check"></i>Your name is {{ name }}.</p>
+</body>
