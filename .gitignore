@@ -137,4 +137,8 @@ GitHub.sublime-settings
 !.vscode/extensions.json 
 .history
 
+# collectstatic #
 static/
+
+# faker #
+_localcode/
