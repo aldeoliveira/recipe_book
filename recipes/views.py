@@ -8,4 +8,10 @@ def home(request):
 
 
 def recipe(request, id):
-    return render(request, 'recipes/pages/detail.html', context={'recipe': make_recipe})
+    template = 'recipes/pages/detail.html'
+    context = {
+            'recipe': make_recipe(),
+            'is_detail_page': True,
+        }
+
+    return render(request, template, context)
