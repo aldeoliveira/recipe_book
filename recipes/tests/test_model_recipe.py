@@ -42,3 +42,7 @@ class TestModelRecipe(TestCase):
     @skip('test is not ready')
     def test_field_author_relates_to_model_user(self):
         pass
+    
+    @skip('test is not ready')
+    def test_string_representation_is_title(self):
+        pass
