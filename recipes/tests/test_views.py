@@ -1,12 +1,6 @@
 from django.test import TestCase
 from django.urls import reverse, resolve
-from . import views
-
-
-class TestRecipesUrls(TestCase):
-    def test_home_url_is_correct(self):
-        url = reverse('recipes:home')
-        self.assertEqual(url, '/')
+from recipes import views
 
 
 class TestRecipesViews(TestCase):
