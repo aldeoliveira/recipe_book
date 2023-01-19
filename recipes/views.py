@@ -1,5 +1,4 @@
-from django.shortcuts import render, get_list_or_404
-from utils.recipes.factory import make_recipe
+from django.shortcuts import render, get_list_or_404, get_object_or_404
 
 from .models import Recipe
 
@@ -27,8 +26,10 @@ def category(request, category_id):
 
 def recipe(request, id):
     template = 'recipes/pages/detail.html'
+    queryset = Recipe.objects.filter(id=id)
+    recipe = get_object_or_404(queryset)
     context = {
-            'recipe': make_recipe(),
+            'recipe': recipe,
             'is_detail_page': True,
         }
 
